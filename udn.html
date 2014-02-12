@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<script>
+var tagtoo_ads_config = [{
+"slot":1,"id": "udn_affiliate","width":120,"height":600
+}];
+var _tagtoo_ads = _tagtoo_ads || [];
+_tagtoo_ads.push(["init", tagtoo_ads_config]);
+var RequestSite = "//production.udnaffiliate.appspot.com";
+var tagtoo_ad_script = document.createElement("script");
+tagtoo_ad_script.type = "text/javascript";
+tagtoo_ad_script.async = true;
+tagtoo_ad_script.src = RequestSite + "/api_server/static/js/ad_loader.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(tagtoo_ad_script, s);
+</script>
+<div id="udn_affiliate"></div>
+</body>
+</html>
