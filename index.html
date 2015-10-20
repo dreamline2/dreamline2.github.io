@@ -4,9 +4,76 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style>
+
+	body {
+		background-color: #2D3E50;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	</style>
 </head>
 <body>
-	<script data-name="dreamline2" src="http://nodejs.in/octocard/bin/octocard.js"></script>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+				<img class="hidden-xs show" src="assets/imgs/CV_by_wilson.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="octocard" class="visible-xs-block hidden"></div>
+	<script>
+	OCTOCARD = {
+	  // [required][string] Username.
+	  name: 'dreamline2',
+
+	  // [optional][string|Element]
+	  // element or elementId, `octocard` as default.
+	  element: 'octocard',
+
+	  // [optional][string]
+	  // Used module names, default is:
+	  //   `base,details,stats,repos,contributions,orgs`.
+	  // You can change the order or remove module if you don't want.
+	  modules: 'base,details,stats,repos,orgs',
+
+	  // [optional][string]specify the theme name to be used
+	  // 'default' as default
+	  theme: "azzura",
+
+	  // [optional][number] Number of repos to be shown.
+	  // `3` as default
+	  // reposNum: 4,
+
+	  // [optional][number]repos which will not be shown
+	  // '' as default
+	  reposIgnored: 'reponame1,reponame2',
+
+	  // [optional][number] Number of organizations to be shown.
+	  // `Infinity` as default, represent showing all organizations.
+	  // orgsNum: -1,
+
+	  // [optional][string]url of jsonp api
+	  // `http://octocard.in/api` as default.
+	  // If your use your own octocard-server, change it.
+	  // api: 'http://your-octocard-server.com/api',
+
+	  // [optional][boolean]show footer or not
+	  // 'false' as default
+	  // noFooter: false,
+
+	  // [optional][boolean]
+	  // Use `shadowDom` or `iframe` to create isolate container or not
+	  // 'false' as default
+	  // noIsolated: true
+	};
+	</script>
+	<script src="http://octocard.in/o.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
